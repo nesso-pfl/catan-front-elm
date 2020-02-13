@@ -1,10 +1,8 @@
 module Catan.Core exposing (..)
 
 
-type alias Point =
-    { x : Int
-    , y : Int
-    }
+type Point
+    = Point Int Int
 
 
 type Resource
@@ -19,7 +17,7 @@ type Resource
 type alias Panel =
     { point : Point
     , resource : Resource
-    , num : Int
+    , tip : Int
     }
 
 
