@@ -64,6 +64,65 @@ panelPoints =
     ]
 
 
+buildingPoints : List Point
+buildingPoints =
+    [ Point -4 6
+    , Point 0 8
+    , Point 4 10
+    , Point -6 4
+    , Point -2 6
+    , Point 2 8
+    , Point 6 10
+    , Point -6 2
+    , Point -2 4
+    , Point 2 6
+    , Point 6 8
+    , Point -8 0
+    , Point -4 2
+    , Point 0 4
+    , Point 4 6
+    , Point 8 8
+    , Point -8 -2
+    , Point -4 0
+    , Point 0 2
+    , Point 4 4
+    , Point 8 6
+    , Point -10 -4
+    , Point -6 -2
+    , Point -2 0
+    , Point 2 2
+    , Point 6 4
+    , Point 10 6
+    , Point -10 -6
+    , Point -6 -4
+    , Point -2 -2
+    , Point 2 0
+    , Point 6 2
+    , Point 10 4
+    , Point -8 -6
+    , Point -4 -4
+    , Point 0 -2
+    , Point 4 0
+    , Point 8 2
+    , Point -8 -8
+    , Point -4 -6
+    , Point 0 -4
+    , Point 4 -2
+    , Point 8 0
+    , Point -6 -8
+    , Point -2 -6
+    , Point 2 -4
+    , Point 6 -2
+    , Point -6 -10
+    , Point -2 -8
+    , Point 2 -6
+    , Point 6 -4
+    , Point -4 -10
+    , Point 0 -8
+    , Point 4 -6
+    ]
+
+
 type alias Harbor =
     { point : Point
     , resource : Resource
