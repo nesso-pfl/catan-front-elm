@@ -1,0 +1,9 @@
+{
+  "name": "catan-front-elm",
+  "version": "1.0.0",
+  "description": "The catan (board game) frontend implemented in Elm.",
+  "main": "index.js",
+  "repository": "https://github.com/nesso-pfl/catan-front-elm.git",
+  "author": "nesso-pfl",
+  "license": "MIT"
+}
