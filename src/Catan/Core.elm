@@ -1,5 +1,7 @@
 module Catan.Core exposing (..)
 
+import List as L
+
 
 type Point
     = Point Int Int
@@ -14,11 +16,52 @@ type Resource
     | Ore
 
 
+boardResources : List Resource
+boardResources =
+    L.concat
+        [ L.repeat 1 Desert
+        , L.repeat 4 Brick
+        , L.repeat 3 Lumber
+        , L.repeat 4 Wool
+        , L.repeat 4 Grain
+        , L.repeat 3 Ore
+        ]
+
+
 type alias Panel =
     { point : Point
     , resource : Resource
     , tip : Int
     }
+
+
+boardTips : List Int
+boardTips =
+    [ 2, 3, 3, 4, 4, 5, 5, 6, 6, 8, 8, 9, 9, 10, 10, 11, 11, 12 ]
+
+
+panelPoints : List Point
+panelPoints =
+    [ Point -4 4
+    , Point 0 6
+    , Point 4 8
+    , Point -6 0
+    , Point -2 2
+    , Point 2 4
+    , Point 6 6
+    , Point -8 -4
+    , Point -4 -2
+    , Point 0 0
+    , Point 4 2
+    , Point 8 4
+    , Point -6 -6
+    , Point -2 -4
+    , Point 2 -2
+    , Point 6 0
+    , Point -4 -8
+    , Point 0 -6
+    , Point 4 -4
+    ]
 
 
 type alias Harbor =
